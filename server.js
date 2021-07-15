@@ -23,4 +23,3 @@ app.listen(PORT, () => {
 });
 
 
-//update routes with db info
