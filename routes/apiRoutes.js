@@ -72,7 +72,7 @@ router.post("/api/workouts", (req, res) => {
   });
 
 
-  //delete
+  //delete exercises - not required, but it's here anyway because i thought it was required
   router.delete("/api/workouts/:id", (req, res) => {
     db.Workout.findByIdAndDelete({ _id: req.params.id}, { exercises: req.body })
     .then(dbWorkout => {
